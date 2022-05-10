@@ -1,0 +1,122 @@
+.tariff
+    padding-top: 65px
+    padding-bottom: 80px
+
+
+    .tariff__inner
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        .tariff__item
+            padding: 15px
+
+            .tariff__block
+                position: relative
+                max-width: 350px
+                text-align: center
+                background-color: #f5f4f2
+                padding: 124px 35px 25px 35px
+                margin-top: 133px
+
+                &:last-child
+                    margin-right: 0
+
+                .block__img
+                    position: absolute
+                    top: -84px
+                    left: 50%
+                    transform: translateX(-50%)
+
+                .block__heading
+                    font-size: 30px
+                    color: #000
+                    font-weight: 900
+                    text-transform: uppercase
+
+                .block__descr
+                    font-size: 18px
+                    color: #101010
+                    margin-top: 30px
+
+                .block__price
+                    font-size: 43px
+                    font-weight: 900
+                    color: #ffc61a
+                    text-transform: uppercase
+                    margin-top: 40px
+
+            .standard
+                position: relative
+                background-color: #ffc61a
+                color: #000
+
+                .block__bottom
+                    width: 100%
+                    position: absolute
+                    bottom: 138px
+                    right: -138px
+                    content: ""
+                    /* Треугольник */
+                    border-top: 74px solid transparent
+                    border-right: 74px solid transparent
+                    border-left: 74px solid #000
+                    transform: rotateZ(-90deg)
+
+                    img
+                        position: absolute
+                        bottom: 8px
+                        right: 240px
+                        max-width: 30px
+                        transform: rotateZ(17deg)
+
+
+                .block__price
+                    color: #000
+            
+
+@media (max-width: 468px)
+
+    .tariff
+
+        .tariff__inner
+
+            .tariff__item
+
+                .tariff__block
+
+                    .block__descr
+                        font-size: 16px
+
+@media (max-width: 400px)
+
+    .tariff
+
+        .tariff__inner
+
+            .tariff__item
+                padding: 0
+
+                .tariff__block
+                    max-width: 300px
+                    padding-top: 100px
+
+                    .block__img
+                        max-width: 300px
+
+                    .block__heading
+                        font-size: 24px
+
+                    .block__price
+                        font-size: 30px
+                        margin-top: 30px
+
+                    .btn
+                        margin-top: 30px
+
+                    .block__bottom
+                        bottom: 113px
+                        right: -113px
+
+                        img
+                            right: 190px

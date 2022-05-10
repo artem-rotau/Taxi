@@ -1,0 +1,96 @@
+.testimonials
+    padding-top: 110px
+    padding-bottom: 115px
+    background: url("../img/bg_3.png") center/cover no-repeat
+
+    .testimonials__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 75px
+
+        .testimonials__block
+            position: relative
+            max-width: 580px
+            margin-top: 30px
+            padding: 40px 70px 35px 50px
+            background-color: #040707
+            color: #fff
+            border-radius: 40px
+            font-size: 18px
+            
+            .block__person
+                display: flex
+                margin-top: 25px
+                align-items: center
+
+                .person__info
+                    margin-left: 18px
+                    text-transform: uppercase
+                    font-weight: 900
+
+                    .person__name
+                        color: #ffc61a
+                        font-size: 25px
+                    
+                    .person__career
+                        padding-left: 5px
+
+            .triangle-1
+                position: absolute
+                bottom: -45px
+                right: 105px
+                content: ""
+                /* Треугольник */
+                border-top: 30px solid transparent
+                border-right: 30px solid transparent
+                border-left: 30px solid #040707
+                transform: rotateZ(90deg)
+
+            .triangle-2
+                position: absolute
+                bottom: -30px
+                left: 66px
+                content: ""
+                /* Треугольник */
+                border-top: 30px solid transparent
+                border-right: 30px solid transparent
+                border-left: 30px solid #040707
+                transform: rotateZ(-180deg)
+
+
+@media (max-width: 1200px)
+
+    .testimonials
+
+        .testimonials__inner
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 0
+
+            .testimonials__block
+                margin-top: 60px
+    
+
+@media (max-width: 568px)
+
+    .testimonials
+
+        .testimonials__inner
+
+            .testimonials__block
+                padding: 40px 30px 40px 30px
+    
+
+@media (max-width: 468px)
+    
+    .testimonials
+
+        .testimonials__inner
+
+            .testimonials__block
+                padding: 40px 20px 40px 20px
+                
+                .block__descr
+                    font-size: 16px

@@ -1,0 +1,100 @@
+.header
+    position: absolute
+    width: 100%
+    z-index: 10
+    margin: 0 auto
+    padding: 40px 80px
+
+    .header__inner
+        display: flex
+        justify-content: space-between
+
+
+        .header__title
+            max-width: 170px
+            font-weight: 700
+
+            .title__part-1
+                font-size: 40px
+                color: #fff
+
+            .title__part-2
+                font-size: 40px
+                color: #daa505
+                text-transform: uppercase
+
+            .title__descr
+                font-size: 15px
+                text-transform: uppercase
+                letter-spacing: 3px
+                color: #fff
+
+        ul
+            display: flex
+            justify-content: space-between
+            list-style-type: none
+            margin-top: 5px
+            
+            li
+                
+                .header__link
+                    color: #fff
+                    text-decoration: none
+                    text-transform: uppercase
+                    padding: 0 25px 
+                    font-size: 15px
+                    font-weight: 700
+                    transition: .3s
+
+                    &:hover
+                        padding: 10px 25px
+                        border-radius: 20px
+                        background-color: #ffc61a
+                        color: #010101
+                        transition: .3s
+
+
+@media (max-width: 1074px)
+
+    .header
+
+        .header__inner
+
+            ul
+                li
+                    .header__link
+                        padding: 0 15px
+
+                        &:hover
+                            padding: 5px 15px
+
+
+@media (max-width: 926px)
+
+    .header
+
+        .header__inner
+
+            ul
+                display: none
+
+
+@media (max-width: 678px)
+
+    .header
+        padding: 20px 40px
+
+        .header__inner
+
+            .header__title
+
+                .title__part-1, .title__part-2
+                    font-size: 30px
+
+                .title__descr
+                    font-size: 12px
+
+@media (max-width: 426px)
+
+    .header
+        padding: 20px

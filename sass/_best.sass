@@ -1,0 +1,103 @@
+.best
+    max-width: 100%
+    padding: 80px 0
+    background: url("../img/bg_2.png") center/cover no-repeat
+    text-align: center
+
+    .best__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width: 100%
+        margin-top: 24px
+        margin-bottom: 34px
+        text-align: left
+
+        .best__block
+            display: flex
+            flex-direction: column
+
+            .block__inner
+                display: flex
+                justify-content: center
+                margin-top: 84px
+
+                .block__round
+                    min-width: 80px
+                    height: 80px
+                    border-radius: 50%
+                    background-color: #ffc61a
+
+                    .block__img
+                        display: block
+                        position: relative
+                        top: 50%
+                        transform: translateY(-50%)
+                        max-width: 30px
+                        margin: 0 auto
+
+                .block__text
+                    padding: 0 15px 0 35px
+
+                    .block__title
+                        font-size: 25px
+                        font-weight: 900
+                        text-transform: uppercase
+                        color: #ffc61a
+
+                    .block__descr
+                        max-width: 360px
+                        font-size: 18px
+                        color: #fff
+                        margin-top: 15px
+
+
+@media (max-width: 999px)
+
+    .best
+
+        .best__inner
+            display: flex
+            justify-content: center
+
+@media (max-width: 468px)
+
+    .best
+
+        .best__inner
+
+            .best__block
+
+                .block__inner
+
+                    .block__text
+
+                        .block__title
+
+                        .block__descr
+                            font-size: 16px
+
+@media (max-width: 400px)
+
+    .best
+
+        .best__inner
+
+            .best__block
+
+                .block__inner
+                    margin-top: 60px
+
+                    .block__round
+                        min-width: 70px
+                        height: 70px
+
+                    .block__text
+                        padding-left: 25px
+                        padding-right: 0
+
+                        .block__title
+                            font-size: 24px
+
+                        .block__descr
+                            font-size: 16px
